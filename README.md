@@ -1,6 +1,5 @@
-# JavaScript Basics
 
-## JavaScript in Summary
+# JavaScript in Summary
 
 JavaScript is a versatile language with the following characteristics:
 - **Weakly Typed:** No explicit type assignment; data types can change dynamically.
@@ -42,3 +41,9 @@ function printHello() {
     console.log("This is a Declarative function");
 }
 printHello();
+
+function doSquare(num) {
+    return num * num;
+}
+console.log(doSquare(5));
+
