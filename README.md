@@ -42,8 +42,24 @@ function printHello() {
 }
 printHello();
 
+#### Declarative Function
 function doSquare(num) {
     return num * num;
 }
 console.log(doSquare(5));
+
+### Function Expression
+Assigning a function to a variable. Here the function acts like a value.
+// Anonymous Function - Function without a name
+var b = function() {
+    console.log('Function expression');
+};
+b();
+
+// Named Function Expression
+var c = function xyz() {
+    console.log("c called");
+};
+c();  // c called
+// xyz(); // Throws ReferenceError: xyz is not defined.
 
