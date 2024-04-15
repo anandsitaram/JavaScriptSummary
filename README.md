@@ -45,7 +45,7 @@ function printHello() {
 printHello();
 ```
 ### Declarative Function with return
-```
+```javascript
 function doSquare(num) {
     return num * num;
 }
@@ -54,7 +54,7 @@ console.log(doSquare(5));
 ## Function Expression
 Assigning a function to a variable. Here the function acts like a value.
 // Anonymous Function - Function without a name
-```
+```javascript
 var b = function() {
     console.log('Function expression');
 };
@@ -69,7 +69,7 @@ c();  // c called
 ```
 ## Arrow Function
 
-```
+```javascript
 var test = () => console.log("This is an Arrow Function");
 test();
 
@@ -82,7 +82,7 @@ console.log(add(5, 7));
 
 ## Objects
 
-```
+```javascript
 const person = {
     name: "QA",
     age: 32,
