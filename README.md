@@ -41,16 +41,18 @@ function printHello() {
     console.log("This is a Declarative function");
 }
 printHello();
-
-#### Declarative Function
+```
+### Declarative Function with return
+```
 function doSquare(num) {
     return num * num;
 }
 console.log(doSquare(5));
-
-### Function Expression
+```
+## Function Expression
 Assigning a function to a variable. Here the function acts like a value.
 // Anonymous Function - Function without a name
+```
 var b = function() {
     console.log('Function expression');
 };
@@ -62,4 +64,35 @@ var c = function xyz() {
 };
 c();  // c called
 // xyz(); // Throws ReferenceError: xyz is not defined.
+```
+## Arrow Function
 
+```
+var test = () => console.log("This is an Arrow Function");
+test();
+
+const incr = a => a + 1;
+console.log(incr(5));
+
+const add = (a, b) => a + b;
+console.log(add(5, 7));
+```
+
+## Objects
+
+```
+const person = {
+    name: "QA",
+    age: 32,
+    isEligible: true,
+    // It can have functions too
+    greet() {
+        console.log("Hi, this is " + this.name + " and age is " + this.age);
+    }
+};
+
+console.log(person.name);
+console.log(person.age);
+console.log(person.isEligible);
+person.greet();
+```
